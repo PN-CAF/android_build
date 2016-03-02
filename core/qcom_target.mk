@@ -80,10 +80,6 @@ $(call bt-vendor-set-path-variant,bt-caf)
 
 else
 
-$(call project-set-path,qcom-audio,hardware/qcom/audio/default)
-$(call project-set-path,qcom-display,hardware/qcom/display/$(TARGET_BOARD_PLATFORM))
-$(call project-set-path,qcom-media,hardware/qcom/media/default)
-
 $(call project-set-path,qcom-camera,hardware/qcom/camera)
 $(call project-set-path,qcom-gps,hardware/qcom/gps)
 $(call project-set-path,qcom-sensors,hardware/qcom/sensors)
@@ -95,6 +91,10 @@ $(call wlan-set-path-variant,wlan)
 $(call bt-vendor-set-path-variant,bt)
 
 endif
+
+$(call project-set-path,qcom-audio,hardware/qcom/audio/default)
+$(call project-set-path,qcom-display,hardware/qcom/display/$(TARGET_BOARD_PLATFORM))
+$(call project-set-path,qcom-media,hardware/qcom/media/default)
 
 # Populate the qcom hardware variants in the project pathmap.
 define qcom-set-path-variant
