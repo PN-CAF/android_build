@@ -104,6 +104,5 @@ endef
 $(call qcom-set-path-variant,AUDIO,audio)
 $(call qcom-set-path-variant,CAMERA,camera)
 $(call qcom-set-path-variant,DISPLAY,display)
-$(call qcom-set-path-variant,GPS,gps)
 $(call qcom-set-path-variant,MEDIA,media)
 $(call qcom-set-path-variant,SENSORS,sensors)
